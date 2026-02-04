@@ -47,7 +47,16 @@ body {
   background: linear-gradient(180deg, #0a2c45 0%, #06324f 40%, #0d3c5c 100%);
 }
 
-#startButton {
+#controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#startButton,
+#muteButton {
   margin-top: -8px;
   padding: 12px 22px;
   font-size: 16px;
@@ -62,12 +71,14 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
 
-#startButton:hover {
+#startButton:hover,
+#muteButton:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 26px rgba(0, 0, 0, 0.4);
 }
 
-#startButton:active {
+#startButton:active,
+#muteButton:active {
   transform: translateY(1px);
 }
 
